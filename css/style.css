@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000428, #004e92 );
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000428, #004e92);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* navbar */
+
+.container {
+    /* margin-left: 5%; */
+    /* margin-right: 5%; */
+}
+
+
+/* Navbar section */
+
+.nav {
+    width: 100%;
+    height: 70px;
+    /* position: fixed; */
+    line-height: 70px;
+    text-align: center;
+    background-color: #e3f2fd1d;
+    /* background-color: #e3f2fd; */
+    box-shadow: rgba(38, 38, 38, 0.305) 0px 25px 20px -20px;
+}
+
+.nav div.logo {
+    width: 180px;
+    height: 10px;
+    position: absolute;
+    
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #EC255A;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.nav div.logo a:hover {
+    color: #c0c0c0;
+}
+
+.nav div.main_list {
+    width: 700px;
+    height: 70px;
+    float: right;
+    /* margin-left: 40px; */
+    align-items: center;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 70px;
+    /* display: flex; */
+    list-style: none;
+    /* justify-content: space-between; */
+    margin: 0;
+}
+
+.nav div.main_list ul li {
+    width: 200px;
+    height: 70px;
+    /* border: 1px solid white; */
+    /* padding: 0 4px 0 4px; */
+    display: inline;
+    padding-left: 8px;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fe547c;
+    /* color: rgb(5, 63, 99); */
+    line-height: 45px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 5px;
+    /* border: 1px solid white; */
+    margin: 2px 10px 2px 10px;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #c0c0c0;
+}
+
+.nav div.media_button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    display: none;
+}
+
+.nav div.media_button button.main_media_button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    ;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.nav div.media_button button.main_media_button span {
+    width: 98%;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(1) {
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(2) {
+    transform: rotateY(180deg);
+    transition: all 0.4s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(3) {
+    transform: rotateY(180deg);
+    transition: all 0.3s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.active span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active span:nth-of-type(2) {
+    display: none;
+}
+
+.nav div.media_button button.active span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 20deg);
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -20deg);
+}
+
+
+/* navbar ends */
+
+
+/* Home section */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(244, 244, 244);
+}
+
+
+/* Medai qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        margin: 0;
+    }
+
+    .nav div.logo {
+        margin-left: 25px;
+    }
+
+    .nav div.main_list {
+        width: 100%;
+        margin-top: 65px;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    .nav div.show_list {
+        height: 200px;
+    }
+
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+
+    .nav div.main_list ul li {
+        width: 100%;
+        height: 40px;
+        background-color: rgba(9, 62, 87, 0.8);
+    }
+
+    .nav div.main_list ul li a {
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+/* ----- header  -->  hero -------*/
+.hero{
+    display: flex;
+}
+.hero > div{
+    width: 40%;
+}
+/* ----- header  -->  hero end -------*/
+
+
+
+
+<!-- HTML !-->
+<button class="button-79" role="button">Button 79</button>
+
+/* CSS */
+.button-79 {
+  backface-visibility: hidden;
+  background: #332cf2;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: 1rem 1.25rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-79:disabled {
+  color: #787878;
+  cursor: auto;
+}
+
+.button-79:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.button-79:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.button-79:focus {
+  outline: 0 solid transparent;
+}
+
+.button-79:focus:before {
+  border-width: .125rem;
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.button-79:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.button-79:not(:disabled):active {
+  transform: translateY(.125rem);
+}

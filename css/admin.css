@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border-radius: 5px; */
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgba(220, 237, 252, 0.545);
+}
+/* navbar */
+.navbar{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+/* vertical tab */
+.vertical-tab{
+    width: 220px;
+   
+}
+.vertical-tab a{
+    width: 200px;
+    position: relative;
+}
+
+#v-pills-tabContent{
+    width: 85%;
+}
+
+/* project list */
+.project-list-container > div{
+    width: 16%;
+    border: 1px solid black;
+    justify-content: space-between;
+    margin: 2px;
+}
+
+/* add project */
+
+.tab-content content-title{
+    margin-top: 50px;
+}
+.tab-content h5{
+    /* border: 1px solid black; */
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.598);
+    
+}
+.add-project-form{
+    width: 70%;
+    padding: 10px;
+}
+.add-project-form form{
+    /* margin: 5% auto; */
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.add-project-form .row input > .add-btn{
+    width: 120px;
+}
+
+/* table */
+.tab-content .container-fluid{
+    height: 610px;
+    overflow: auto;
+}
+table{    
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.table-responsive thead{
+    border-bottom: 2px solid black;
+}

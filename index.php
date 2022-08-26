@@ -74,7 +74,7 @@ $result = mysqli_query($conn, $sql);
             </p>
             <div class="my-resume ">
                 <button type="button" class="btn btn-primary text-light">
-                    <a onClick="openTab(this)" href="/files/Sudev Majhi_CV_6.pdf" target="_blank" name="PDF/Sudev_majhi_CV.pdf" class="text-light">
+                    <a onClick="openTab(this)" href="/files/Sudev Majhi CV 7.pdf" target="_blank" name="PDF/Sudev_majhi_CV.pdf" class="text-light">
                         View Resume </a>
                 </button>
             </div>
@@ -166,10 +166,10 @@ $result = mysqli_query($conn, $sql);
                 <img class="" src="/img/pyhton (1).png" alt="" width="45px" height="45px">
                 <p>Python</p>
             </div>
-            <div>
+            <!-- <div>
                 <img class="" src="/img/django (1).png" alt="" width="60px" height="45px">
                 <p>Django</p>
-            </div>
+            </div> -->
             <!-- <div>
                         <img class="" src="/img/java (1).png" alt="" width="50px" height="45px">
                         <p>Java</p>
